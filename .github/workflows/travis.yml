@@ -32,7 +32,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install codacy-coverage
         cp decide/local_settings.gactions.py decide/local_settings.py
     - name: Run migrations (unnecessary)
       run: |
@@ -41,4 +40,4 @@ jobs:
     - name: Run tests
       run: |
         cd decide
-        ./manage.py test mixnet 
+        ./manage.py test voting 
