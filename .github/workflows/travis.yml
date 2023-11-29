@@ -36,8 +36,8 @@ jobs:
     - name: Run migrations (unnecessary)
       run: |
         cd decide
-        ./manage.py migrate
+        python manage.py migrate
     - name: Run tests
       run: |
         cd decide
-        ./manage.py test mixnet 
+        ./manage.py test voting 
